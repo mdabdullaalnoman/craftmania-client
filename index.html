@@ -9,6 +9,196 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./media/company_Logo.jfif">
+
+    <!-- All Style start -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        /* header */
+        .header-image {
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0px 15px 10px -15px gray;
+        }
+
+        .header-image img {
+            height: 100px;
+        }
+
+
+        /* ===============main=========== */
+        main {
+            padding: 0 20%;
+            background-color: rgb(221, 221, 221);
+        }
+
+        /* =============common class start============= */
+        .container-warp {
+            padding: 1rem 0;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .container-shipping {
+            padding: 1rem .5rem;
+            font-size: 1.2rem;
+            color: #383838;
+            text-align: justify;
+        }
+
+        .product-tittle {
+            background: #7579E7;
+            border-radius: 10px 10px 0 0;
+            padding: .5rem 0;
+            color: white;
+        }
+
+        .container-warp .product-img img {
+            width: 50%;
+            padding: 1rem .5rem;
+        }
+
+        .text-gray {
+            color: #383838;
+            padding-top: 1rem;
+            text-align: justify;
+        }
+
+        /* =============common class End============= */
+
+
+
+        /* ==================Description start =========*/
+        .container-description {
+            background: white;
+            border-radius: 10px;
+        }
+
+        .container-description .product-tittle h2 {
+            text-align: center;
+        }
+
+        .container-description .product-content p {
+            padding-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .container-description .product-content ul li {
+            list-style: none;
+            font-size: 1.1rem;
+            color: #383838;
+        }
+
+        .container-description .product-content {
+            padding: 1rem;
+        }
+
+        /* ==================Description end =========*/
+
+        /* ---------payment section start------------ */
+        .container-warp .container .product-img {
+            padding: 1rem .5rem;
+            font-size: 1.2rem;
+            color: #383838;
+            text-align: center;
+        }
+
+        /*============ Review section start========= */
+        .star-content-top-warp {
+            padding: 1rem;
+            margin: 1rem;
+            -moz-box-shadow: inset 0 0 10px #ccc;
+            -webkit-box-shadow: inset 0 0 10px #ccc;
+            box-shadow: inset 0 0 10px #ccc;
+        }
+
+        .review-box h3 {
+            color: #E60965;
+            font-style: italic;
+        }
+
+        .star-content-warp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        svg {
+            height: 35px;
+            width: 35px;
+            color: #F1D00A;
+        }
+
+        /* ==========Review section end========== */
+
+
+
+        /* ===================footer ==================*/
+        footer {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer strong {
+            color: #7579E7;
+        }
+
+
+        /* --------------Responsive----------- */
+        @media screen and (max-width: 768px) {
+            main {
+                padding: 0 5%;
+            }
+
+            .container-warp .product-img img {
+                width: 80%;
+            }
+
+            .container-warp .container .product-img p {
+                font-size: 1rem;
+                text-align: justify;
+            }
+
+            .container-description .product-content ul li {
+                font-size: 1rem;
+                text-align: justify;
+            }
+
+            .pament {
+                text-align: center !important;
+            }
+
+            svg {
+                height: 25px;
+                width: 25px;
+            }
+
+            .review-box h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            svg {
+                height: 15px;
+                width: 15px;
+            }
+
+            .container-warp .container .product-img p strong {
+                font-size: .8rem;
+            }
+        }
+    </style>
+    <!-- All Style End -->
 </head>
 
 <body>
@@ -309,7 +499,7 @@
 
 
     <footer>
-        <p> &copy; COPYRIGHT 2022 <strong>EBAY SELLER TEMPLATE</strong> ALL RIGHTS RESERVED</p>
+        <p> &copy; COPYRIGHT 2022 <strong>EBAY SELLER CRAFTER MANIA</strong> ALL RIGHTS RESERVED</p>
     </footer>
 
 </body>
