@@ -78,6 +78,30 @@ main{
     text-align: center;
 }
 
+/*============ Review section start========= */
+.star-content-top-warp{
+    padding: 1rem;
+    margin: 1rem;
+   -moz-box-shadow:    inset 0 0 10px #ccc;
+   -webkit-box-shadow: inset 0 0 10px #ccc;
+    box-shadow:         inset 0 0 10px #ccc;
+}
+.review-box h3{
+    color: #E60965;
+    font-style: italic;
+}
+.star-content-warp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+svg{
+    height: 35px;
+    width: 35px;
+    color: #F1D00A;
+}
+/* ==========Review section end========== */
+
 
 
 /* ===================footer ==================*/
@@ -93,7 +117,7 @@ footer strong{
 /* --------------Responsive----------- */
 @media screen and (max-width: 768px) {
     main{
-        padding: 0 8%;
+        padding: 0 5%;
     }
     .container-warp .product-img img{
         width: 80%;
@@ -109,4 +133,20 @@ footer strong{
     .pament{
         text-align: center !important;
     }
+    svg{
+        height: 25px;
+        width: 25px;
+    }
+    .review-box h3{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 500px){
+    svg{
+        height: 15px;
+        width: 15px;
+    }
+    .container-warp .container .product-img p strong{
+        font-size: .8rem;
+     }
 }
