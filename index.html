@@ -236,21 +236,24 @@
                         <h2>CRAFTER MANIA </h2>
                     </div>
                     <div class="product-img">
-                        <img src="https://i.imgur.com/aLSeBV6.jpg" alt="product">
+                        <img id="main" src="https://i.imgur.com/pBHSUFn.jpg" alt="product">
                     </div>
 
                     <div class="grid-img-warp">
                         <div class="image1">
-                            <img src="https://i.imgur.com/ydcwGrI.jpg" alt="one">
+                            <img id="one" src="https://i.imgur.com/oU8TZfS.jpg" alt="one">
                         </div>
                         <div class="image1">
-                            <img src="https://i.imgur.com/HowzhbE.jpg" alt="one">
+                            <img id="two" src="https://i.imgur.com/l7yLrvP.jpg" alt="one">
                         </div>
                         <div class="image1">
-                            <img src="https://i.imgur.com/boUvOvT.jpg" alt="one">
+                            <img id="three" src="https://i.imgur.com/oLtjiZq.jpg" alt="one">
                         </div>
                         <div class="image1">
-                            <img src="https://i.imgur.com/VRT71sI.jpg" alt="one">
+                            <img id="four" src="https://i.imgur.com/M8pRg1h.jpg" alt="one">
+                        </div>
+                        <div class="image1">
+                            <img id="five" src="https://i.imgur.com/pBHSUFn.jpg" alt="one">
                         </div>
                     </div>
 
@@ -534,6 +537,35 @@
     <footer>
         <p> &copy; COPYRIGHT 2022 <strong>EBAY SELLER CRAFTER MANIA</strong> ALL RIGHTS RESERVED</p>
     </footer>
+
+
+
+
+    <script>
+        const mainImg = document.getElementById("main");
+        const oneImg = document.getElementById("one");
+        const twoImg = document.getElementById("two");
+        const threeImg = document.getElementById("three");
+        const fourImg = document.getElementById("four");
+        const fiveImg = document.getElementById("five");
+
+        oneImg.addEventListener('mouseover', function () {
+            document.getElementById("main").src = "https://i.imgur.com/oU8TZfS.jpg";
+        })
+        twoImg.addEventListener('mouseover', function () {
+            document.getElementById("main").src = "https://i.imgur.com/l7yLrvP.jpg";
+        })
+        threeImg.addEventListener('mouseover', function () {
+            document.getElementById("main").src = "https://i.imgur.com/oLtjiZq.jpg";
+        })
+        fourImg.addEventListener('mouseover', function () {
+            document.getElementById("main").src = "https://i.imgur.com/M8pRg1h.jpg";
+        })
+        fiveImg.addEventListener('mouseover', function () {
+            document.getElementById("main").src = "https://i.imgur.com/pBHSUFn.jpg";
+        })
+
+    </script>
 
 </body>
 
