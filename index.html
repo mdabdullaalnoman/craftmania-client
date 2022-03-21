@@ -67,7 +67,7 @@
 
         .container-warp .product-img img {
             width: 50%;
-            padding: 1rem .5rem;
+            margin: 1rem .5rem;
         }
 
         .text-gray {
@@ -118,6 +118,10 @@
             text-align: center;
         }
 
+        .paypal-img img {
+            width: 50% !important;
+        }
+
         /*============ Review section start========= */
         .star-content-top-warp {
             padding: 1rem;
@@ -130,6 +134,8 @@
         .review-box h3 {
             color: #E60965;
             font-style: italic;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
         }
 
         .star-content-warp {
@@ -138,10 +144,14 @@
             justify-content: center;
         }
 
-        svg {
-            height: 35px;
-            width: 35px;
-            color: #F1D00A;
+        .star-content-warp .star-icons img {
+            width: 120px;
+        }
+
+        .please-note {
+            color: red;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
         }
 
         /* ==========Review section end========== */
@@ -165,11 +175,25 @@
             padding-bottom: 1rem;
         }
 
+        /* shipping section start */
+        .herm-warp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .herm-warp .herm-img img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        /* shipping section end */
 
         /* ===================footer ==================*/
         footer {
             text-align: center;
             padding: 2rem;
+            font-family: 'Roboto', sans-serif;
         }
 
         footer strong {
@@ -203,14 +227,17 @@
                 text-align: start;
             }
 
-            svg {
-                height: 25px;
-                width: 25px;
-            }
-
             .review-box h3 {
                 font-size: 18px;
                 font-family: 'Roboto', sans-serif;
+            }
+
+            .star-content-warp .star-icons img {
+                width: 100px;
+            }
+
+            .paypal-img img {
+                width: 80% !important;
             }
         }
 
@@ -223,6 +250,18 @@
             .container-warp .container .product-img p strong {
                 font-size: 14px;
                 font-family: 'Roboto', sans-serif;
+            }
+
+            .star-content-warp .star-icons img {
+                width: 60px;
+            }
+
+            .paypal-img img {
+                width: 90% !important;
+            }
+
+            footer {
+                font-size: 14px;
             }
         }
     </style>
@@ -304,7 +343,7 @@
                             Fabric Samples are available if you are unsure of the colour and want an exact colour match
                             for Only £0.99 and you can request up to any 3 colours for free</p>
 
-                        <h3 style="color: red; font-size: 18px;">Please Note</h3>
+                        <h3 class="please-note">Please Note</h3>
                         <ul>
                             <li>✅ Although all pictures have been taken with extra care to ensure the exact colour of
                                 the cushion fabric is shown, the Pictures may not show the exact colour due to light
@@ -331,8 +370,12 @@
                         <h2>PAYMENT</h2>
                     </div>
                     <div class="product-img">
-                        <p style="text-align: center; font-size: 18px;">We accept payment through PAYPAL</p>
-                        <img src="https://i.ibb.co/fNDV2Xq/payment.png" alt="payment_photo">
+                        <p style="text-align: center; font-size: 18px; margin: 10px 0; font-weight: bold;">We accept
+                            payment through PAYPAL
+                        </p>
+                        <div class="paypal-img">
+                            <img src="https://i.ibb.co/fNDV2Xq/payment.png" alt="payment_photo">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -360,7 +403,7 @@
                             </li>
                         </ul><br>
 
-                        <h3 style="color: red; font-size: 18px;">Please Note</h3>
+                        <h3 class="please-note">Please Note</h3>
                         <ul>
                             <li> ✅ All orders are dispatched on working days (Monday to Friday), by this we exclude
                                 Saturdays, Sundays and Bank Holidays.
@@ -375,8 +418,13 @@
                         </ul>
                     </div>
 
-                    <div class="herm-img">
-                        <img src="https://i.ibb.co/RcVs023/herms.png" alt="hermes">
+                    <div class="herm-warp">
+                        <div class="herm-img">
+                            <img src="https://i.ibb.co/qkQMGgN/herms.png" alt="hermes">
+                        </div>
+                        <div class="herm-img">
+                            <img src="https://i.ibb.co/x8Gxh6W/roylMail.jpg" alt="hermes">
+                        </div>
                     </div>
 
                 </div>
@@ -443,26 +491,7 @@
                                     <p><strong> Item as Described</strong></p>
                                 </div>
                                 <div class="star-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
+                                    <img src="https://i.ibb.co/Qc8ndz6/fivestar.png" alt="five_star">
                                 </div>
                                 <div class="five-star">
                                     <p><strong> 5 star</strong></p>
@@ -473,26 +502,7 @@
                                     <p><strong> Communication</strong></p>
                                 </div>
                                 <div class="star-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
+                                    <img src="https://i.ibb.co/Qc8ndz6/fivestar.png" alt="five_star">
                                 </div>
                                 <div class="five-star">
                                     <p><strong> 5 star</strong></p>
@@ -503,26 +513,7 @@
                                     <p><strong> Postage Charge</strong></p>
                                 </div>
                                 <div class="star-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
+                                    <img src="https://i.ibb.co/Qc8ndz6/fivestar.png" alt="five_star">
                                 </div>
                                 <div class="five-star">
                                     <p><strong> 5 star</strong></p>
